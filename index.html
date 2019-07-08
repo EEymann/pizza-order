@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
- <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
- <link href="css/styles.css" rel="stylesheet" type="text/css">
- <script src="js/jquery-3.4.1.js"></script>
- <script src="js/bootstrap.min.js"></script>
- <script src="js/scripts.js"></script>
- <title>Pizza Order</title>
-</head>
-<body>
-   <h1>Pizza Time!</h1>
-  <h3>Pizza Size</h3>
-   <label for="pizza-size">Choose Your Pizza Size:</label>
-   <select class="form-control" id="pizza-size">
-     <option value=" Small">Small</option>
-     <option value=" Medium">Medium</option>
-     <option value=" Large">Large</option>
-   </select>
-   <h2>Small - 10"</h2>
-   <h2>Medium - 15"</h2>
-   <h2>Medium - 20"</h2>
- <button type="submit" class="btn">Place Order!</button>
- </form>
-</body>
-</html>
 
+<head>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza Order</title>
+</head>
+
+<body>
+  <h1>Pizza Time!</h1>
+  <!-- ==== Pizza Size ==== -->
+  <div class="container">
+  <div class="row">
+    <div>
+      <h3>Pizza Size</h3>
+    </div>
+  </div>
+  <div class="row">
+  <label for="pizza-size">Choose Your Pizza Size:</label>
+  <select class="form-control" id="pizza-size">
+    <option value=" Small">Small</option>
+    <option value=" Medium">Medium</option>
+    <option value=" Large">Large</option>
+  </select>
+  </div>
+  <h2>Small - 10"</h2>
+  <h3>1 - 2 people</h3>
+  <h2>Medium - 15"</h2>
+  <h3>2 - 3 people</h3>
+  <h2>Large - 20"</h2>
+  <h3>2 - 4 people</h3>
+  </div>
+  <button type="submit" class="btn">Place Order!</button>
+  </form>
+</body>
+
+</html>
