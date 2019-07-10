@@ -11,9 +11,9 @@ Pizza.prototype.price = function() {
   var price = 10;
 
   if (this.pizzasize === "Medium") {
-    price *= 2;
+    price += 3;
   } else if (this.pizzasize === "Large") {
-    price *= 2.5;
+    price += 5;
   } else {
     price *= 1;
   }
