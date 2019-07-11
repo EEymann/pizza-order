@@ -2,7 +2,7 @@
 
 // Pizza Constructor
 function Pizza(size) {
-  this.pizzasize = size;
+  this.pizzasize = size.trim();
   this.pizzatoppings = [];
 };
 
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
     $("ul#pizza-list").append("<li><button type='submit' class='btn btn-primary btn-margin'><span class='pizzaOrder'>" + newPizza.pizzasize + " Pizza Order" + "</button></span></li>");
 
-    $(".pizzaOrder").last().click(function() {
+    $("ul#pizza-list").click(function() {
       $("#pizza-details").show();
       $(".pizza-size").text(newPizza.pizzasize);
       $(".pizza-toppings").text(newPizza.pizzatoppings);
