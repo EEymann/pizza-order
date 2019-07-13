@@ -43,3 +43,17 @@ h2.intro {
   margin: 0 auto;
 }
 
+ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.btn {
+  float: left;
+  margin-right: 16px;
+}
+
+.btn-margin {
+  margin-bottom: 20px;
+}
+

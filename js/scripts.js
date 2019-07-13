@@ -39,7 +39,7 @@ $(document).ready(function() {
       newPizza.pizzatoppings.push($(this).val());
     });
 
-    $("ul#pizza-list").append("<li><button type='submit' class='btn btn-primary btn-margin'><span class='pizzaOrder'>" + newPizza.pizzasize + " Pizza Order" + "</button></span></li>");
+    $("ul#pizza-list").append("<li><button type='submit' class='btn btn-success btn-margin'><span class='pizzaOrder'>" + newPizza.pizzasize + " Pizza Order" + "</button></span></li>");
 
     $("ul#pizza-list").click(function() {
       $("#pizza-details").show();
