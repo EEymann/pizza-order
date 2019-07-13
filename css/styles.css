@@ -1,3 +1,41 @@
 #pizza-details {
   display: none;
 }
+
+/* Header holding the image and the text */
+.header {
+  position: relative;
+  text-align: center;
+  color: rgb(15, 15, 14);
+}
+
+/* Bottom left text */
+
+
+h2.intro {
+  color: green;
+  text-align: center;
+  background-color: lightcoral;
+}
+
+.pizza-sm {
+  width: 45%;
+  height: 45%;
+  display: block;
+  margin: 0 auto;
+}
+
+.pizza-md {
+  width: 55%;
+  height: 55%;
+  display: block;
+  margin: 0 auto;
+}
+
+.pizza-lg {
+  width: 65%;
+  height: 65%;
+  display: block;
+  margin: 0 auto;
+}
+

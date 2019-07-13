@@ -7,14 +7,14 @@
   <script src="js/jquery-3.4.1.js"></script>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
-  <title>Pizza Order</title>
+  <title>Peppy's Pizza</title>
 </head>
 <body>
-    <div class="container">
-        <div class="jumbotron">
-          <h1>Pizza Time!</h1>
-        </div>
+    <div class="header"> 
+          <div style="background-image: url(img/pizza.jpg); background-size: cover; background-position: center; height: 200px"></div>
+        </span>
       </div>
+    <h2 class="intro">Welcome to Peppy's Pizza!</h2>
   <!-- ==== Pizza Size ==== -->
   <div class="container">
     <form id="pizza-order">
@@ -27,17 +27,30 @@
     <div class="row">
       <label for="pizza-size">Choose Your Pizza Size:</label>
       <select class="form-control" id="pizza-size">
-        <option value=" Small">Small</option>
-        <option value=" Medium">Medium</option>
-        <option value=" Large">Large</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
       </select>
     </div>
-    <h2>Small - 10"</h2>
-    <h3>Serves 1-2 people</h3>
-    <h2>Medium - 15"</h2>
-    <h3>Serves 2-3 people</h3>
-    <h2>Large - 20"</h2>
-    <h3>Serves 2-4 people</h3>
+
+    
+    <div class="row">
+        <div class="col-md-4 center-text">
+          <h4>Small 10"</h4>
+          <h5>1-2 People</h5>
+          <img src="img/pizza-size.png" alt="Small Pizza" class="img-responsive pizza-sm">
+        </div>
+        <div class="col-md-4 center-text">
+          <h4>Medium 15"</h4>
+          <h5>2-3 People</h5>
+          <img src="img/pizza-size.png" alt="Medium Pizza" class="img-responsive pizza-md">
+        </div>
+        <div class="col-md-4 center-text">
+          <h4>Large 20"</h4>
+          <h5>2-4 People</h5>
+          <img src="img/pizza-size.png" alt="Large Pizza" class="img-responsive pizza-lg">
+        </div>
+      </div>
   
   <!-- ==== Pizza Toppings ==== -->
   <div class="row">
@@ -85,11 +98,9 @@
 </form>
 
 <!-- ======= Pizza Order Output ====== -->
-<div class="row">
-    
-      <ul id="pizza-list">
-      </ul>
-    
+  <div class="row">   
+    <ul id="pizza-list">
+    </ul> 
   </div>
 <!-- ======= Pizza Order Details ====== -->
   <div class="row">
@@ -101,6 +112,7 @@
       <h2>$ <span class="order-total"></span><h2>
     </div>
   </div>
+</div>
 </div>
 </body>
 </html>

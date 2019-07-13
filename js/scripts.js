@@ -2,7 +2,7 @@
 
 // Pizza Constructor
 function Pizza(size) {
-  this.pizzasize = size.trim();
+  this.pizzasize = size;
   this.pizzatoppings = [];
 };
 
